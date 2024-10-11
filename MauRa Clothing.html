@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MauRa Clothing</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(176, 176, 176, 0.963);
+            margin: 0;
+        }
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.6); /* Transparan */
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: rgba(176, 176, 176, 0.963);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            padding: 80px 20px;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(176, 176, 176, 0.963); /* Transparan */
+            margin-bottom: 20px;
+        }
+
+        /* Image styles */
+        .image {
+            margin: 2px;
+            /* Jarak dari semua sisi */
+        }
+
+        /* Centering styles */
+        .centered {
+            text-align: center;
+        }
+
+        .centered img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 12px 24px; /* Vertical and Horizontal Padding */
+            background-color: #ffff; /* Blue background */
+            color: black; /* White text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover effect */
+            margin-top: 20px; /* Space above the button */
+        }
+        
+        /* Hover Effect */
+        .button:hover {
+            background-color: gray; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+   
+<body>
+    <p>
+        <img src="https://pbs.twimg.com/media/GZmQzGdbMAAzOH-?format=jpg&name=900x900" width="100%" height="100%">
+    </p>
+
+    <!-- Navigasi Bar -->
+    <div class="navbar">
+        <a href="#about">About Us</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#checkout">Checkout</a>
+    </div>
+
+    <h2 style='color: white; font-size: 150%;'>Today's Date: <span id="tanggal"></span></h2>
+
+    <script>
+        const today = new Date();
+        
+        const options = { year: 'numeric', month: 'long', day: 'numeric' }; // Format tanggal
+        
+        document.getElementById('tanggal').textContent = today.toLocaleDateString('en-US', options); // Menampilkan tanggal 
+    </script>
+        
+    
+    <h1 style="color:rgb(255, 255, 255);font-family:Droid Sans Mono;font-size:300%;text-align:center;">MauRa Clothing</h1>
+    <h2 style="color:rgb(249, 249, 249);font-family:Droid Sans Mono;font-size:150%;text-align:center;">We are not the future, we are the present. The change starts now, and it starts with us.</h2>
+    <br>
+    <h2 style="color:rgb(231, 231, 231);font-family:Droid Sans Mono;font-size:150%;text-align:center;">★ ★ ★ ★</h2>
+    <br>
+
+    <div id="about" class="section">
+        <div>
+            <h3 style="color:rgb(255, 255, 255);font-family:Droid Sans Mono;font-size:180%;text-align:center;"> ✩ Our Story ✩</h3>
+            <p style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:125%;text-align:center;"> At MauRa Clothing, we combine modern fashion with comfort and sustainability, designed specifically for those who dare to be different, especially Generation Z. We believe that clothing is a form of self-expression, and each of our collections helps you look stylish while staying comfortable.</p>
+            <p style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:125%;text-align:center;"> As a brand that cares about the environment, we carefully choose eco-friendly materials to create clothing that’s not only cool but also responsible. Join MauRa Clothing and be part of a community that celebrates diversity, sets trends, and builds a better future.</p>
+            <p style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:125%;text-align:center;"> Join MauRa Clothing today and be part of the change. </p>
+            <br>
+            <h2 style="color:rgb(231, 231, 231);font-family:Droid Sans Mono;font-size:150%;text-align:center;">★ ★ ★ ★</h2>
+            <br>
+            <h1 style="color:rgb(255, 255, 255);font-family:Droid Sans Mono;font-size:200%;text-align:center;"> Founder </h1>
+            <p style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:125%;text-align:center;">"Fashion is all about expressing yourself and feeling confident! At MauRa Clothing, we believe that with creativity and courage, you can tackle anything. Keep daring to experiment with your style and stand out every day!"</p>
+            <img src="./MauRa Clothing_files/jun.jpg" alt="Description of the image" width="30%" height="10%">
+            <br>
+            <a href="https://www.instagram.com/junhui_moon?igsh=anMwbDEzZWVzeWtr" title="instagram logo icons"><img src="./MauRa Clothing_files/ins.webp" alt="Description of the image" width="4%" height="1%" class="image"></a>
+            <a href="https://x.com/pledis_17?t=TOMyMyY3q8s72lvmNt0iAw&amp;s=08" title="x logo icons"><img src="./MauRa Clothing_files/x 2.webp" alt="Description of the image" width="4%" height="1%" class="image"></a>
+        </div>
+    </div>
+    <br>
+    <div id="katalog">
+    <h2 style="color:rgb(231, 231, 231);font-family:Droid Sans Mono;font-size:150%;text-align:center;">★ ★ ★ ★</h2>
+    <br>
+    
+        <h3 style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:140%;text-align:center;">Discover Your True Vibe</h3>
+        
+        <h2 style="color:rgb(255, 255, 255);font-family:Droid Sans Mono;font-size:200%;text-align:center;">Explore Our Fashion Collection</h2>
+    </div>
+    <div class="centered">
+        <img src="https://i.pinimg.com/736x/36/11/2f/36112f89c788ef4e2e9256d9a4f267ba.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/97/aa/75/97aa75508c2e18b1f33ea43954cc29b5.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/8a/d7/2e/8ad72e310f0b453cac822cce4da6a5d6.jpg" alt="Description of the image" width="19%" height="10%" class="image">
+    </div>
+    <br>
+    <h3 style="color:rgb(241, 241, 241);font-family:Droid Sans Mono;font-size:140%;text-align:center;">Y2K TOP</h3>
+    <div class="centered">
+        <img src="https://i.pinimg.com/736x/c3/fa/7d/c3fa7d3b6f5162b17a9f3e05a4e9d0ed.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/9c/d1/84/9cd1845ea19c046cba0a3fa1728d63ad.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/f7/f6/38/f7f638c1a0e4c40160e1aa5e6de520f4.jpg" alt="Description of the image" width="15%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/51/4b/da/514bda282447dfe1800fe8404ecd643f.jpg" alt="Description of the image" width="15%" height="10%" class="image">
+    </div>
+    <h3 style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:110%;text-align:center;">Rediscover the excitement of the new millennium with our Y2K tops where retro meets now. Shop the collection and let <br> your fashion reflect a bygone era with a modern edge! </h3>
+    <br>
+    <h3 style="color:rgb(241, 241, 241);font-family:Droid Sans Mono;font-size:140%;text-align:center;">Y2K BOTTOM</h3>
+    <div class="centered">
+        <img src="https://i.pinimg.com/736x/97/a9/9c/97a99cc10e98a9c47e2d51f17b865080.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/20/9e/d5/209ed511c9114e23e9330f352a0c1a69.jpg" alt="Description of the image" width="21.2%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/61/aa/d3/61aad35a4e3ded066ad9a6ad014bf2c3.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/50/54/b4/5054b446b4685dd6d5e0face3c9fa61c.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+    </div>
+    <h3 style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:110%;text-align:center;">Our Y2K bottoms are all about style and comfort. Pair them with your favorite tops for a complete look that defines your unique vibe!</h3>
+    <br>
+    <h3 style="color:rgb(241, 241, 241);font-family:Droid Sans Mono;font-size:140%;text-align:center;">Y2K SHOES</h3>
+        <div class="centered">
+            <img src="https://i.pinimg.com/736x/04/03/2d/04032d7c1d4c7f7b73574ccfc40d6b93.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+            <img src="https://i.pinimg.com/736x/87/e3/d6/87e3d687d163835a75eb39806d89dc0e.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+            <img src="https://i.pinimg.com/736x/84/a5/ec/84a5ecc3b3bbbb166e054d61f29e54d3.jpg" alt="Description of the image" width="23.5%" height="10%" class="image">
+            <img src="https://i.pinimg.com/736x/fa/e1/8f/fae18f93e9a665f5e223c4489e6bca76.jpg" alt="Description of the image" width="20%" height="10%" class="image">
+        </div>
+        <h3 style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:110%;text-align:center;"> Our Y2K boots are designed to make a strong, bold statement. With ankle-high designs, lace-up or zipper accents, and daring details, <br> these boots are perfect for adding an edgy, powerful vibe to your everyday look.</h3>
+    <br>    
+    <div id="checkout">
+        <h3 style="color:rgb(241, 241, 241);font-family:Droid Sans Mono;font-size:140%;text-align:center;">Y2K ACCESSORIES</h3>
+    </div>
+        <div class="centered">
+        <img src="https://i.pinimg.com/736x/94/d7/15/94d71568224746d616337881a30a6265.jpg" alt="Description of the image" width="15%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/05/db/d8/05dbd85d62cada8b6a3eca03d64647fb.jpg" alt="Description of the image" width="15%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/cc/06/4d/cc064d03cbb9b9b449267449ad3e4e7f.jpg" alt="Description of the image" width="15%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/e7/a4/d3/e7a4d362dc9383857ea4e2fbcdcd355f.jpg" alt="Description of the image" width="13%" height="10%" class="image">
+        <img src="https://i.pinimg.com/736x/96/6c/7c/966c7c8b581a2ff65aefb7e3186b1a76.jpg" alt="Description of the image" width="15%" height="10%" class="image">
+    </div>
+    <h3 style="color:rgb(236, 236, 236);font-family:Droid Sans Mono;font-size:110%;text-align:center;">Step out in style with our Y2K dresses that celebrate the fun and freedom of the early 2000s. Perfect for day or night, these dresses will turn heads!</h3>
+    <br>
+
+    <div class="centered">
+        <a href="./test.html" class="button">Checkout Now</a>
+    </div>
+    
+    <h2 style="color:rgb(231, 231, 231);font-family:Droid Sans Mono;font-size:150%;text-align:center;">★ ★ ★ ★</h2>
+    <br>
+    <h2 style="color:rgb(255, 255, 255);font-family:Droid Sans Mono;font-size:200%;text-align:center;">You Can Find Us</h2>
+    <div class="centered">
+        <a href="https://www.instagram.com/jessicaophelia_?igsh=MTh6MjZpemJjaTV4Mw==" title="Go to Instagram">
+            <img src="./MauRa Clothing_files/ins.webp" alt="Instagram logo" width="4%" height="1%" class="image">
+        </a>
+        <a href="https://id.shp.ee/WP9c7im" title="Go to Shopee">
+            <img src="./MauRa Clothing_files/sopi.webp" alt="Shopee logo" width="3%" height="1%" class="image">
+        </a>
+        <a href="https://www.tiktok.com/@yesooki?_t=8pji3bVg5sj&_r=1" title="Go to TikTok">
+            <img src="./MauRa Clothing_files/tiktok.webp" alt="TikTok logo" width="3%" height="1%" class="image">
+        </a>
+        <a href="https://tokopedia.link/XD0kJmgeUMb" title="Go to Tokopedia">
+            <img src="./MauRa Clothing_files/tokopedia.png" alt="Tokopedia logo" width="3%" height="1%" class="image">
+        </a>
+    <p>
+        <img src="https://pbs.twimg.com/media/GZmQzGdbMAAzOH-?format=jpg&name=900x900" width="100%" height="100%">
+    </p>
+</body>
+
+</html>
